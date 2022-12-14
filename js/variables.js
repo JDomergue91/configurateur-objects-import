@@ -1,7 +1,7 @@
 const bulletTissuArray = [];
 const bulletPocheArray = [];
 const bulletTexteArray = [];
-const variables = {selectedTissu: "Violet",selectedPoche: "Rouge",customText: 'Votre texte ici',selectedTextColor: 'Noir',textOption: true,prixLettre: 1.80};
+const variables = {selectedTissu: "Violet",selectedPoche: "Rouge",customText: '',selectedTextColor: 'Noir',textOption: true,prixLettre: 1.80};
 export function repricing() {
     let calculatedPrice = 0;
     calculatedPrice += bulletTissuArray.find(tissu => tissu.getCouleur == variables.selectedTissu).getPrice;
@@ -19,5 +19,4 @@ export function repricing() {
 }
 
 export { bulletTissuArray, bulletPocheArray, bulletTexteArray, variables };
-
 
